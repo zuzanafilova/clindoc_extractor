@@ -124,3 +124,22 @@ In a real deployment, the following improvements would be prioritized:
 5.  **Audit Logs:** Storing original dictations and extraction results for clinical auditing and compliance.
 6.  **Centralized Configuration Management:** Migrate from scattered os.getenv() calls across the codebase to a centralized, strictly typed configuration class utilizing pydantic-settings. This would ensure fail-fast behavior if critical environment variables are missing during startup.
 7.  **Externalized Clinical Resources:** Move business logic constants - such as the hardcoded medication blacklist tokens in the Regex engine - out of the source code and into externalized datasets or databases. This will enable medical data updates without requiring new application deployments.
+
+### **Performance Benchmark Summary**
+The service includes a validation suite to measure extraction accuracy against Gold Standard samples.
+
+You can replicate these results with:
+
+```bash
+docker-compose exec clindoc-api pytest tests/validation -s
+```
+
+```text
+===========================================================================
+         FINAL CLINICAL EXTRACTION BENCHMARK SUMMARY
+===========================================================================
+STRATEGY             | SCORE    | MATCH    | MISS     | WRONG   
+----------------------------------------------------------------
+REGEX                |   92.1% | 35       | 3        | 0       
+LOCAL (Ollama)       |  100.0% | 38       | 0        | 0       
+===========================================================================
