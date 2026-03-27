@@ -1,0 +1,25 @@
+# Python ignore
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+.idea/
+.vscode/
+
+# Environment Variables (Secrets)
+.env
+
+# Docker
+.dockerignore
+
+# OS specific
+.DS_Store
+Thumbs.db

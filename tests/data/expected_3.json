@@ -1,0 +1,26 @@
+{
+  "patient": {
+    "name": "Karel Svoboda",
+    "birth_date": "1955-05-12"
+  },
+  "vitals": {
+    "bp": "128/78",
+    "hr": "72 bpm"
+  },
+  "diagnoses": [
+    {
+      "code": "J45.0",
+      "system": "ICD-10",
+      "text": "astma bronchiale"
+    }
+  ],
+  "medications": [
+    {
+      "name": "Eliquis",
+      "dose": "5mg",
+      "frequency": "2x denně (BID)"
+    }
+  ],
+  "admission_date": "2024-03-24",
+  "follow_up": "follow-up na kardiologii za 4 týdny"
+}

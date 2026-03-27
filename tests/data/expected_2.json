@@ -1,0 +1,11 @@
+{
+  "patient": { "name": "Maria Horakova", "birth_date": "1975-07-22" },
+  "vitals": { "bp": "145/88", "spo2": "94%", "hr": "92 bpm" },
+  "diagnoses": [{ "code": "I21.4", "system": "ICD-10", "text": "suspected NSTEMI" }],
+  "medications": [
+    { "name": "heparin", "dose": "5000 IU", "frequency": "bolus" },
+    { "name": "metoprolol", "dose": "25mg", "frequency": "BID" }
+  ],
+  "admission_date": null,
+  "follow_up": "cardiology, admission recommended"
+}

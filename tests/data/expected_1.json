@@ -1,0 +1,31 @@
+{
+  "patient": {
+    "name": "Jan Novak",
+    "birth_date": "1968-03-15"
+  },
+  "vitals": {
+    "bp": "178/95",
+    "spo2": "97%"
+  },
+  "diagnoses": [
+    {
+      "code": "I63.9",
+      "system": "ICD-10",
+      "text": "Ischemicka CMP"
+    }
+  ],
+  "medications": [
+    {
+      "name": "aspirin",
+      "dose": "100mg",
+      "frequency": "1x denne"
+    },
+    {
+      "name": "atorvastatin",
+      "dose": "40mg",
+      "frequency": null
+    }
+  ],
+  "admission_date": "2024-11-12",
+  "follow_up": "rehab program a kontrola u neurologa za 6 tydnu"
+}
